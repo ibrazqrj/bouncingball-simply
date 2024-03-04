@@ -1,0 +1,32 @@
+int posX = 300;
+int posY = 300;
+float speedX = 3;
+float speedY = 2;
+int diameter = 50;
+ 
+void setup() {
+  size(800, 600);
+}
+ 
+void draw() {
+  background (80);                 // Hintergrundfarbe
+  circle(posX,posY,diameter);       // Kreis mit den int's
+  posX += speedX;                  // posX (300) mit speedX (3) erhöhen dass es 303 gibt
+  posY += speedY;                  // posY (300) mit speedY (2) erhöhen dass es 302 gibt
+  if (posX > width) {             //
+    speedX = -speedX;             // Rechts Ball abprallen lassen
+  }                               //
+  if (posX < 0) {                 //
+    speedX = -speedX;             // Links Ball abprallen lassen
+    speedX *= 2; 
+  }                               //
+ 
+ 
+  if (posY > height) {           //
+    speedY = -speedY;            // Oben Ball abprallen lassen
+  }                              //
+  if (posY < 0) {                //
+    speedY = -speedY;            // Unten Ball abprallen lassen
+    speedY *= 2;                // +Geschwindigkeit um 1.2 erhöhen
+  }                             //
+}
