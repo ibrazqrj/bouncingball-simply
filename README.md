@@ -1,6 +1,5 @@
 <!-- Heading -->
 ![image](https://github.com/ibrazqrj/bouncingball-simply/assets/153816768/df887e06-4e28-4690-b9bd-71b9a92e96e2)
-
 <h3 align="center" width="200px"><b>🔵 Simple Animation Bouncing Ball in Processing ⚽</b></h3>
 
 <!-- Desc section -->
